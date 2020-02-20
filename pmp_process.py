@@ -26,14 +26,14 @@ def read_from_file(file_name, proc_dict, file_dict):
                     if not (in_file in file_dict.keys()):
                         file_dict[in_file]=pmp_object(in_file)
                     proc_dict[proc_name].add('in',file_dict[in_file])
-                    file_dict[in_file].add('up',proc_dict[proc_name])
+                    file_dict[in_file].add('down',proc_dict[proc_name])
             elif ('[output]' in line):
                 output_files=line.replace('[output]','').split(';')
                 for out_file in output_files:
                     if not (out_file in file_dict.keys()):
                         file_dict[out_file]=pmp_object(out_file)
                     proc_dict[proc_name].add('out',file_dict[out_file])
-                    file_dict[out_file].add('down',proc_dict[proc_name])
+                    file_dict[out_file].add('up',proc_dict[proc_name])
             else:
                 proc_name=''
 
