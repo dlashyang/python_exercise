@@ -1,0 +1,15 @@
+[process]Develop project charter
+[input]business documents;agreements;enterprise environmental factors;organizational process assets
+[output]project charter; assumption log
+
+[process]develop project management project
+[input]project charter;output from other processes;enterprise environmental factors;organizational process assets
+[output]project management plan
+
+[process]direct and manage project work
+[input]project management plan;project documents;approved change request;enterprise environmental factors;organizational process assets
+[output]deliverables;work performance data;issue log;change request;project management plan update;project documents update;organizational process assets update
+
+[process]manage project knowledge
+[input]project management plan;project documents;deliverables;enterprise environmental factors;organizational process assets
+[output]lessons learned register;project management plan update;organizational process assets update
